@@ -15,6 +15,9 @@
 /* Make ALL h1 headings dark red                */
 /* Hint: use the tag name as the selector       */
 /* -------------------------------------------- */
+h1 {
+  color: rgb(114, 0, 0);
+}
 
 
 
@@ -23,14 +26,18 @@
 /* Make ALL paragraphs use the font Arial       */
 /* Hint: font-family: Arial, sans-serif;        */
 /* -------------------------------------------- */
-
+p {
+  font-family: Arial, sans-serif;
+}
 
 
 /* -------------------------------------------- */
 /* CHALLENGE 3: Element Selector                */
 /* Make ALL list items (li) dark blue            */
 /* -------------------------------------------- */
-
+li {
+  color: rgb(0, 0, 114);
+}
 
 
 /* -------------------------------------------- */
@@ -42,7 +49,9 @@
 /* have class="highlight" on them               */
 /* Hint: class selectors start with a dot .     */
 /* -------------------------------------------- */
-
+.highlight {
+  background-color: rgb(255, 255, 204);
+}
 
 
 /* -------------------------------------------- */
@@ -52,7 +61,10 @@
 /* Make them italic with a dark green colour    */
 /* Hint: font-style: italic;                    */
 /* -------------------------------------------- */
-
+.character-info {
+  font-style: italic;
+  color: rgb(0, 114, 0);
+}
 
 
 /* -------------------------------------------- */
