@@ -75,8 +75,10 @@ li {
 /*   - a light grey background (#f0f0f0)        */
 /*   - some padding (10px)                      */
 /* -------------------------------------------- */
-
-
+.cast-list {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
 
 /* -------------------------------------------- */
 /* CHALLENGE 7: ID Selector                     */
@@ -86,6 +88,10 @@ li {
 /*   - font size 48px                           */
 /* Hint: ID selectors start with a hash #       */
 /* -------------------------------------------- */
+#page-title {
+  text-align: center;
+  font-size: 48px;
+}
 
 
 
@@ -95,7 +101,17 @@ li {
 /* Add an id called "gandalf-name" to it        */
 /* Then style it with a unique colour            */
 /* -------------------------------------------- */
+#gandalf-name{
+  animation: colorChange 3s infinite;
+}
 
+@keyframes colorChange {
+  0%   { color: red; }
+  25%  { color: blue; }
+  50%  { color: green; }
+  75%  { color: orange; }
+  100% { color: red; }
+}
 
 
 /* -------------------------------------------- */
@@ -111,8 +127,12 @@ li {
 /* to the Characters h2 in the HTML             */
 /* Hint: border-bottom: 2px solid darkblue;     */
 /* -------------------------------------------- */
-
-
+h2 {
+  color: rgb(0, 0, 114);
+}
+#characters-heading {
+  border-bottom: 2px solid black;
+}
 
 /* -------------------------------------------- */
 /* CHALLENGE 10: Put it all together            */
