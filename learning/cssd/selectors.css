@@ -1,0 +1,148 @@
+/* ============================================ */
+/*  CSS SELECTOR PRACTICE                       */
+/*  Write your CSS below each challenge.        */
+/*  Save and refresh the browser to see changes */
+/* ============================================ */
+
+#page-container{
+    margin: auto;
+    width: 1400px;
+    background-color: beige;
+}
+
+/* -------------------------------------------- */
+/* CHALLENGE 1: Element Selector                */
+/* Make ALL h1 headings dark red                */
+/* Hint: use the tag name as the selector       */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 2: Element Selector                */
+/* Make ALL paragraphs use the font Arial       */
+/* Hint: font-family: Arial, sans-serif;        */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 3: Element Selector                */
+/* Make ALL list items (li) dark blue            */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 4: Class Selector                  */
+/* Make the elements with class "highlight"     */
+/* have a yellow background                     */
+/*                                              */
+/* Look in the HTML - some elements already     */
+/* have class="highlight" on them               */
+/* Hint: class selectors start with a dot .     */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 5: Class Selector                  */
+/* The three character descriptions have the    */
+/* class "character-info"                       */
+/* Make them italic with a dark green colour    */
+/* Hint: font-style: italic;                    */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 6: Class Selector - Add your own   */
+/* Find the cast list <ul> in the HTML below    */
+/* Add a class called "cast-list" to it         */
+/* Then write CSS here to give it:              */
+/*   - a light grey background (#f0f0f0)        */
+/*   - some padding (10px)                      */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 7: ID Selector                     */
+/* The main page title has id="page-title"      */
+/* Make it:                                     */
+/*   - centred on the page                      */
+/*   - font size 48px                           */
+/* Hint: ID selectors start with a hash #       */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 8: ID Selector - Add your own      */
+/* Find the "Gandalf" heading in the HTML       */
+/* Add an id called "gandalf-name" to it        */
+/* Then style it with a unique colour            */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 9: Choose the right selector!      */
+/* Style ALL h2 headings to be dark blue        */
+/* But make ONLY the "Characters" h2 have a     */
+/* border on the bottom                         */
+/*                                              */
+/* You will need TWO rules:                     */
+/*   - one element selector for all h2s         */
+/*   - one class or ID for just the one h2      */
+/* You will also need to add a class or id      */
+/* to the Characters h2 in the HTML             */
+/* Hint: border-bottom: 2px solid darkblue;     */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* CHALLENGE 10: Put it all together            */
+/* Style the links (<a> tags) so that:          */
+/*   - they are dark purple                     */
+/*   - they have no underline                   */
+/* Hint: text-decoration: none;                 */
+/* Then add a class "external-link" to the      */
+/* links in the HTML and give them a             */
+/* background colour of light yellow (#ffffcc)  */
+/* -------------------------------------------- */
+
+
+
+/* ============================================ */
+/* BONUS CHALLENGES (Offshoot / Research)       */
+/* ============================================ */
+
+/* -------------------------------------------- */
+/* BONUS 1: Hover effect                        */
+/* Research: What is a:hover?                   */
+/* Make links show an underline when the mouse  */
+/* hovers over them                             */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* BONUS 2: Combining selectors                 */
+/* Research: Can you style only the <li>        */
+/* elements that are inside the cast list?      */
+/* Hint: try  .cast-list li { }                 */
+/* This is called a descendant selector         */
+/* Make those specific list items a different   */
+/* colour from the character list items         */
+/* -------------------------------------------- */
+
+
+
+/* -------------------------------------------- */
+/* BONUS 3: Multiple classes                    */
+/* Research: Can one element have two classes?   */
+/* Try adding class="highlight character-info"  */
+/* to one element. What happens?                */
+/* -------------------------------------------- */
