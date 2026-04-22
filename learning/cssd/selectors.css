@@ -144,6 +144,13 @@ h2 {
 /* links in the HTML and give them a             */
 /* background colour of light yellow (#ffffcc)  */
 /* -------------------------------------------- */
+a {
+  color: rgb(114, 0, 114);
+  text-decoration: none;
+}
+.external-link {
+  background-color: #ffffcc;
+}
 
 
 
@@ -157,7 +164,9 @@ h2 {
 /* Make links show an underline when the mouse  */
 /* hovers over them                             */
 /* -------------------------------------------- */
-
+a:hover {
+  text-decoration: underline;
+}
 
 
 /* -------------------------------------------- */
@@ -170,7 +179,9 @@ h2 {
 /* colour from the character list items         */
 /* -------------------------------------------- */
 
-
+.cast-list li {
+  color: rgb(114, 0, 114);
+}
 
 /* -------------------------------------------- */
 /* BONUS 3: Multiple classes                    */
@@ -178,3 +189,6 @@ h2 {
 /* Try adding class="highlight character-info"  */
 /* to one element. What happens?                */
 /* -------------------------------------------- */
+
+/* Yes, an element can have multiple classes. The styles from both classes will apply to the element.  */
+
