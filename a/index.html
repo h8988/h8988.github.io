@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>模糊背景标题页</title>
+        <style>
+            :root {
+                /* 自定义背景图：可替换为你的图片路径（建议放同目录：bg.jpg） */
+                --bg-image: url("./1777501161633.jpg");
+
+                /* 自定义标题样式 */
+                --title-color: #ffffff;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC",
+                    "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            }
+
+            /* 背景层（高斯模糊效果） */
+            .bg {
+                position: fixed;
+                inset: 0;
+                background-image: var(--bg-image);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                /* 模糊 + 轻微缩放避免边缘露白 */
+                filter: blur(18px);
+                transform: scale(1.08);
+                z-index: -2;
+            }
+
+            /* 叠加层：增强可读性 */
+            .overlay {
+                position: fixed;
+                inset: 0;
+                background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.55)
+                );
+                z-index: -1;
+            }
+
+            /* 内容居中 */
+            .wrap {
+                min-height: 100%;
+                display: grid;
+                place-items: center;
+                padding: clamp(16px, 4vw, 48px);
+                text-align: center;
+            }
+
+            .card {
+                width: min(920px, 100%);
+                padding: clamp(18px, 4vw, 44px);
+                border-radius: 18px;
+
+                /* 半透明卡片 + 细微玻璃效果（不依赖背景图模糊也可用） */
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                backdrop-filter: blur(6px);
+                -webkit-backdrop-filter: blur(6px);
+
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            }
+
+            h1 {
+                margin: 0;
+                color: var(--title-color);
+                font-weight: 800;
+                letter-spacing: 0.02em;
+                line-height: 1.1;
+                font-size: clamp(28px, 5vw, 56px);
+                text-wrap: balance;
+            }
+
+            p {
+                margin: 14px 0 0;
+                color: rgba(255, 255, 255, 0.85);
+                font-size: clamp(14px, 2.2vw, 18px);
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="bg" aria-hidden="true"></div>
+        <div class="overlay" aria-hidden="true"></div>
+
+        <main class="wrap">
+            <section class="card" role="region" aria-label="标题区域">
+                <!-- 可自定义内容：直接修改下面这行文字 -->
+                <h1>这里是可自定义的标题</h1>
+                <p>支持手机与电脑自适应。将背景图放在同目录并命名为 bg.jpg，或在 CSS 中替换路径。</p>
+            </section>
+        </main>
+    </body>
+</html>
