@@ -35,7 +35,7 @@
                 background-repeat: no-repeat;
 
                 /* 模糊 + 轻微缩放避免边缘露白 */
-                filter: blur(18px);
+                filter: blur(28px);
                 transform: scale(1.08);
                 z-index: -2;
             }
@@ -46,8 +46,8 @@
                 inset: 0;
                 background: linear-gradient(
                     180deg,
-                    rgba(0, 0, 0, 0.35),
-                    rgba(0, 0, 0, 0.55)
+                    rgba(255, 255, 255, 0.22),
+                    rgba(255, 255, 255, 0.38)
                 );
                 z-index: -1;
             }
@@ -69,7 +69,7 @@
                 /* 半透明卡片 + 细微玻璃效果（不依赖背景图模糊也可用） */
                 background: rgba(255, 255, 255, 0.08);
                 border: 1px solid rgba(255, 255, 255, 0.18);
-                backdrop-filter: blur(6px);
+                backdrop-filter: blur(px);
                 -webkit-backdrop-filter: blur(6px);
 
                 box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
@@ -101,8 +101,8 @@
         <main class="wrap">
             <section class="card" role="region" aria-label="标题区域">
                 <!-- 可自定义内容：直接修改下面这行文字 -->
-                <h1>这里是可自定义的标题</h1>
-                <p>支持手机与电脑自适应。将背景图放在同目录并命名为 bg.jpg，或在 CSS 中替换路径。</p>
+                <h1>扫码成功</h1>
+                <p>您已经成功打开网站</p>
             </section>
         </main>
     </body>
